@@ -1,0 +1,307 @@
+.jl-checkbox{
+	position: relative;
+	clear: both;
+	margin: 0;
+	z-index: 1;
+	margin-top: 5px;
+margin-bottom: 3px;
+}
+.jl-checkbox-btn{
+	position: relative;
+	padding: 6px 15px;
+	border: 1px solid #404C4C;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-image: -webkit-linear-gradient(#4E6164,#384244);
+	cursor: pointer;
+	display:block;
+	z-index:2;
+}
+.jl-checkbox-btn-down{
+	background-image: -webkit-linear-gradient(#EAF4F6,#384244);
+}
+.jl-checkbox-btn-text{
+color: #FFFFFF;
+position: relative;
+z-index: 1;
+width: 100%;
+text-align: left;
+}
+.jl-checkbox-btn-inner{
+	padding-left: 65px;
+	padding: .6em 30px;
+	position: relative;
+	zoom: 1;
+}
+.jl-checkbox-on{
+	background: rgba(0,0,0,.4);
+	background-image: url(./../../../images/icons-18-white.png);
+	background-repeat: no-repeat;
+	background-position: -647px -1px;
+	background-color: #577B94;
+}
+.jl-checkbox-off{
+	background-image: url(./../../../images/icons-18-white.png);
+	background-repeat: no-repeat;
+	background-position: -683px -1px;
+	background-color: #ffffff;
+}
+.jl-checkbox-icon{
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+	left:0px;
+	width: 18px;
+	height: 18px;
+}
+.jl-real-checkbox{
+	position: absolute;
+top: 50%;
+margin-top: -9px;
+left:20px;
+width: 10px;
+height: 10px;
+outline: 0!important;
+z-index: 1;
+display: inline;
+}
+
+
+.jl-ok{
+	background: url(../icons/ok.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background: url(../icons/ok.png) no-repeat, -moz-linear-gradient(top,  #fff,  #ededed);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+	padding-left: 30px;
+}
+.jl-ok:hover {
+	background: url(../icons/ok.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/ok.png) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-ok:active {
+	background: url(../icons/ok.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/ok.png) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+
+.jl-cancel{
+	background: url(../icons/cancel.png) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/cancel.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+	padding-left: 30px;
+}
+.jl-cancel:hover {
+	background: url(../icons/cancel.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/cancel.png) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-cancel:active {
+	background: url(../icons/cancel.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/cancel.png) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-back{
+	background: url(../icons/back.gif) no-repeat,-moz-linear-gradient(top,  #fff,  #ededed);
+	background: url(../icons/back.gif) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	padding-left: 30px;
+}
+.jl-back:hover {
+	background: url(../icons/back.gif) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/back.gif) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-back:active {
+	background: url(../icons/back.gif) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/back.gif) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-save{
+	background: url(../icons/filesave.png) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/filesave.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+	padding-left: 30px;
+}
+.jl-save:hover {
+	background: url(../icons/filesave.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/filesave.png) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-save:active {
+	background: url(../icons/filesave.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/filesave.png) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+
+.jl-edit{
+	background: url(../icons/page_edit.png) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/page_edit.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+	padding-left: 30px;
+}
+.jl-edit:hover {
+	background: url(../icons/page_edit.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/page_edit.png) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-edit:active {
+	background: url(../icons/page_edit.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/page_edit.png) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-delete{
+	background: url(../icons/page_delete.png) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/page_delete.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+	padding-left: 30px;
+}
+.jl-delete:hover {
+	background: url(../icons/page_delete.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/page_delete.png) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-delete:active {
+	background: url(../icons/page_delete.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/page_delete.png) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-detail{
+	background: url(../icons/page_link.png) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/page_link.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+	padding-left: 30px;
+}
+.jl-detail:hover {
+	background: url(../icons/page_link.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/page_link.png) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-detail:active {
+	background: url(../icons/page_link.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/page_link.png) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-discuss{
+	background: url(../icons/comment_discuss.gif) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/comment_discuss.gif) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	padding-left: 30px;
+}
+.jl-discuss:hover {
+	background: url(../icons/comment_discuss.gif) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/comment_discuss.gif) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-discuss:active {
+	background: url(../icons/comment_discuss.gif) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/comment_discuss.gif) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-texture{
+	background: url(../icons/image.gif) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/image.gif) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+	padding-left: 30px;
+}
+.jl-texture:hover {
+	background: url(../icons/image.gif) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/image.gif) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-texture:active {
+	background: url(../icons/image.gif) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/image.gif) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 30%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-assign{
+	background: url(../icons/folder_page.png) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/folder_page.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 10%;color:white;border:1px solid rgb(88, 78, 78);
+	padding-left: 15px;
+}
+.jl-assign:hover {
+	background: url(../icons/folder_page.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/folder_page.png) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+    background-position: 10%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-assign:active {
+	background: url(../icons/folder_page.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/folder_page.png) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 10%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-blackscreen{
+	background: url(../icons/blackscreen.gif) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/blackscreen.gif) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 10%;color:white;border:1px solid rgb(88, 78, 78);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	padding-left: 15px;
+}
+.jl-blackscreen:hover {
+	background: url(../icons/blackscreen.gif) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/blackscreen.gif) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+    background-position: 10%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-blackscreen:active {
+	background: url(../icons/blackscreen.gif) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/blackscreen.gif) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 10%;color:white;border:1px solid rgb(88, 78, 78);
+}
+
+.jl-search{
+	background: url(../icons/search.png) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/search.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    background-position: 10%;color:white;border:1px solid rgb(88, 78, 78);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	padding-left: 15px;
+}
+.jl-search:hover {
+	background: url(../icons/search.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: url(../icons/search.png) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+    background-position: 10%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-search:active {
+	background: url(../icons/search.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/search.png) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 10%;color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-useredit{
+	background: url(../icons/user_edit.png) no-repeat,-moz-linear-gradient(top,  #fff,  #C8DDE2);
+	background: url(../icons/user_edit.png) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	background-position: 30%;
+	padding-left: 30px;
+}
+.jl-useredit:hover {
+	background: url(../icons/user_edit.png) no-repeat,-webkit-gradient(linear, left top, left bottom,from(#4E6164), to(#384244));
+	background: url(../icons/user_edit.png) no-repeat,-moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+    background-position: 30%;
+}
+.jl-useredit:active {
+	background: url(../icons/user_edit.png) no-repeat,-webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: url(../icons/user_edit.png) no-repeat,-moz-linear-gradient(top,  #ededed,  #fff);
+    background-position: 30%;
+}
+
+.jl-default{
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	background: -webkit-gradient(linear, left top, left bottom, from(#6F7575), to(#212F31));
+    color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-default:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384244));
+	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+    color:white;border:1px solid rgb(88, 78, 78);
+}
+.jl-default:active {
+	background: -webkit-gradient(linear, left top, left bottom, from(#4E6164), to(#384344));
+	background: -moz-linear-gradient(top,  #ededed,  #fff);
+	color:white;border:1px solid rgb(88, 78, 78);
+}

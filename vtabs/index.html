@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>垂直选项卡</title>
+		<link rel="shortcut icon" href="../fav.ico" />
+		<link rel="stylesheet" href="css/vtabs.css" />
+		<script type="text/javascript" src="../lib/web/public/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/vtabs.js"></script>
+		<script type="text/javascript" src="../lib/me/resize/win-resize.js"></script>
+		<script type="text/javascript" src="../canvas/v2.0/ic-simplecanvas.js"></script>
+		<script type="text/javascript">
+			addWinResize("resizeVTabs", function() {
+				jQuery("body").vtabs("resize");
+			});
+			var jc = null;
+			jQuery(function() {
+				jc = $("#idleCanvas").simpleCanvas();
+				jc.initContext();
+				jQuery(function() {
+					jQuery("body").vtabs({
+						align: "right",
+						blank: ".my-container",
+						paging: true,
+						items: [{
+							text: "白板工具",
+							url: "http://m.baidu.com"
+						}, {
+							text: "活动控制",
+							url: "http://m.baidu.com"
+						}, {
+							text: "在线资源",
+							url: "http://m.baidu.com",
+							width: "80%"
+						}, {
+							text: "应用中心",
+							url: "http://m.baidu.com"
+						}]
+					});
+				});
+			});
+			var jlShow = jlAlert = function(msg) {
+				var wrapper = jQuery("<div class='jle-topcenter'></div>").appendTo("body");
+				jQuery("<span class='jle-msg'></span>").html(msg).appendTo(wrapper);
+				wrapper.fadeIn("slow").animate({
+					color: "#555"
+				}, 1000).fadeOut("slow");
+			};
+			jQuery.sortAndFoldTuples = function() {
+				$("body").vtabs("closeTab");
+			};
+			jQuery.jcSync = {
+				/** 画线操作 * */
+				onDrawSingleLine: function(opts) {
+					// var jc = opts.jc;
+					// var ctx = opts.ctx;
+					// var id = opts.id;
+					// var from = opts.from;
+					// var to = opts.to;
+					// TODO 发送画线消息
+				},
+				onFinishLine: function(opts) {
+					// var jc = opts.jc;
+					// var ctx = opts.ctx;
+					// var id = opts.output.id;
+					// var points = output.points;
+					// var rect = output.rect;
+					// var center = output.center;
+					// TODO 发送结束画线消息
+				},
+				/** 选择和反选 * */
+				onSelect: function(jc, objectDId) {
+					// TODO 发送选择对象的消息
+				},
+				onDeselectAll: function(jc) {
+					// TODO 发送反选消息
+				},
+				/** 二指手势 * */
+				onJlcStart: function(jc) {
+					// TODO 创建move消息
+				},
+				onJlcMove: function(jc, elLeft, elTop) {
+					// TODO 设置move消息
+				},
+				onJlcResize: function(jc, elWidth, elHeight) {
+					// TODO 设置resize消息
+				},
+				onJlcRotate: function(jc, elAngle) {
+					// TODO 设置rotate消息
+				},
+				afterJlcAction: function(jc) {
+					// TODO 发送transform消息
+				},
+				afterJlcTransform: function(jc) {
+					// TODO 发送操作结束消息
+				},
+				/** 鼠标操作 * */
+				onStartBlockTransform: function(jc) {
+					// TODO 创建消息
+				},
+				onBlockTransform: function(jc, startParams, endParams) {
+					// TODO 设置消息,写日志1,发消息1
+				},
+				onFinishBlockTransform: function(jc) {
+					// TODO 写日志2,发消息2
+					jc.transObject(jc.selected);
+					jc.redrawAll();
+				}
+			};
+		</script>
+	</head>
+
+	<body>
+		<div class="my-container">
+			<canvas id="redrawCanvas" class="my-repeat"></canvas>
+			<canvas id="idleCanvas" redrawAt="redrawCanvas" class="my-repeat"></canvas>
+		</div>
+	</body>
+
+</html>

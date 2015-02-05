@@ -1,0 +1,162 @@
+/* normal style */
+
+* {
+	font-family: "微软雅黑", arial, "arial, helvetica, sans-serif";
+}
+.my-noscroll-a {
+	overflow: hidden;
+}
+.my-noscroll-b {
+	overflow: hidden;
+}
+.my-simple {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+/* common main layout */
+
+.my-fullfill {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+section.my-fullfill {
+	z-index: 1;
+	background-image: url(../img/bricks.png);
+	background-repeat: repeat;
+}
+/* top & bottom */
+
+.my-bottom-bar {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: left;
+	z-index: 2;
+	height: 142px;
+	overflow: hidden;
+}
+/* mac box */
+
+.my-mac-dock {
+	position: absolute;
+	left: 5%;
+	width: 90%;
+	max-width: 90%;
+	height: 142px;
+	display: inline;
+	overflow: hidden;
+}
+.my-mac-left {
+	width: 34px;
+	height: 142px;
+	background: -webkit-linear-gradient(rgba(221, 93, 46, 0.61), rgba(115, 208, 116, 0.9), rgba(71, 73, 234, 0.8));
+}
+.my-mac-right {
+	width: 35px;
+	height: 142px;
+	background: -webkit-linear-gradient(rgba(221, 93, 46, 0.61), rgba(115, 208, 116, 0.9), rgba(71, 73, 234, 0.8));
+}
+.my-mac-center {
+	height: 142px;
+	background: -webkit-linear-gradient(rgba(221, 93, 46, 0.61), rgba(115, 208, 116, 0.9), rgba(71, 73, 234, 0.8));
+}
+.my-mac-content {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin: 40px;
+	line-height: 62px;
+	font-size: 30px;
+	font-family: bold;
+}
+/* content box */
+
+.my-content,
+.my-box-body {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+.my-box-body {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	overflow: hidden;
+}
+.my-cell {
+	position: relative;
+	overflow: hidden;
+}
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	-webkit-padding-after: 0px;
+	-webkit-padding-before: 0px;
+	font-size: 0;
+}
+ul.my-list {
+	margin: 12px 0px 19px 0px;
+	height: 118px;
+	background-color: transparent;
+	white-space: nowrap;
+}
+ul.my-list li {
+	display: inline-block;
+	position: relative;
+	top: 8px;
+	border: 1px solid silver;
+	border-radius: 10px;
+	font-size: 14pt;
+	text-shadow: 1px 0px 3px darkorange;
+	color: rgb(98, 87, 72);
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	margin-left: 5px;
+	background-color: rgb(218, 218, 218);
+	text-align: center;
+	box-shadow: inset 4px 0px rgb(241, 219, 244), inset -4px 0px rgb(232, 232, 232), inset 0px 4px rgb(243, 244, 231), inset 0px -4px rgb(242, 237, 237);
+	cursor: pointer;
+}
+ul.my-list li:hover {
+	opacity: 0.8;
+}
+td {
+	vertical-align: middle;
+}
+.my-turn-left,
+.my-turn-right {
+	text-align: center;
+	overflow: visible;
+	position: relative;
+}
+.my-turn-left {
+	left: -10px;
+}
+.my-turn-right {
+	left: 12px;
+}
+.my-turn-icon {
+	max-width: 40px;
+	border-radius: 20px;
+	background: -webkit-radial-gradient(rgba(213, 201, 160, 1), rgba(39, 42, 26, 0.76));
+	box-shadow: inset 4px 0px 10px orange, inset 0px 4px 10px yellow, inset -4px 0px 10px cyan, inset 0px -4px 10px purple;
+	cursor: pointer;
+}
+.my-global-mask {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(50, 50, 50, 0.3);
+	z-index: 10001;
+}

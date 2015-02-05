@@ -1,0 +1,45 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.pulb-title {
+	line-height: 30px;
+	padding: 0px 5px;
+	font-size: 10pt;
+	font-weight: bold;
+	border-bottom: 1px dashed silver;
+	color: #333;
+}
+.pulb-title-1:before {
+	content: "①";
+	color: #333;
+}
+.pulb-title-2:before {
+	content: "②";
+	color: #333;
+}
+.pulb-area {
+	line-height: 30px;
+	padding: 0px 5px;
+	margin: 5px 0px 10px 0px;
+}
+.pulb-button {
+	padding: 10px 20px;
+	text-align: center;
+	line-height: 30px;
+	width: 52px;
+	border-color: currentcolor;
+	outline: none;
+	border: 1px solid silver;
+	border-radius: 26px;
+	background: -webkit-radial-gradient(center, white, lightgray);
+	cursor: pointer;
+}
+.pulb-button:hover {
+	background: -webkit-radial-gradient(center, white, silver);
+	border-color: transparent;
+	color: red;
+}
+.pulb-button:active {
+	background: -webkit-radial-gradient(center, silver, white, silver);
+}

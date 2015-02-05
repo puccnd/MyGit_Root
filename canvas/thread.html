@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>模拟线程</title>
+		<script type="text/javascript" src="../lib/web/public/jquery-1.11.0.js"></script>
+		<script type="text/javascript">
+			(function(global, $) {
+				var kernel = {};
+				global.onJleMessage = null;
+				global.onJlMessage = function(event) {
+					if (!global.onJleMessage) {
+						if (!kernel["toProc"])
+							kernel["toProc"] = [];
+						kernel["toProc"].push(event);
+					} else {
+						global.onJleMessage(event);
+					}
+				};
+				global.postMessage = function(data) {
+					if (kernel["thread"]) {
+						var win = kernel["wind"];
+						kernel["thread"].onmessage.call(win, {
+							data: data
+						});
+					}
+				};
+				global.dimThread = function(thread, wind, js) {
+					if (!kernel["thread"])
+						kernel["thread"] = thread;
+					if (!kernel["wind"])
+						kernel["wind"] = wind;
+					$.getScript(js, function(data) {
+						eval("var " + data);
+						global.onJleMessage = onmessage;
+						if (kernel["toProc"]) {
+							var evts = kernel["toProc"].slice(0);
+							delete kernel["toProc"];
+							for (var i = 0; i < evts.length; i++) {
+								global.onJleMessage(evts[i]);
+							}
+						}
+					});
+				};
+			})(window, jQuery);
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>

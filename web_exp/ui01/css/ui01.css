@@ -1,0 +1,152 @@
+* {
+	font-family: "microsoft yahei";
+	font-weight: normal;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #e3e3e3;
+}
+.pulb-panel {
+	min-height: 100px;
+	margin: 10px 50px;
+	line-height: 30px;
+}
+.pulb-panel-title {
+	line-height: 30px;
+	height: 60px;
+	background-color: #2890D0;
+	border: 1px solid silver;
+	padding: 0px 30px;
+}
+.pulb-panel-content {
+	background-color: white;
+	border: 1px solid silver;
+	border-top: 0px;
+	min-height: 40px;
+	line-height: 30px;
+	padding: 10px 30px 20px 30px;
+}
+.pulb-panel-left {
+	float: left;
+}
+.pulb-panel-right {
+	float: right;
+}
+.pulb-panel-icon {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/pc.png);
+	background-size: 42px 42px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.pulb-panel-msg {
+	display: inline-block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	color: white;
+	font-size: 22px;
+}
+.pulb-panel-desc {
+	display: inline-block;
+	min-width: 60px;
+	height: 60px;
+	padding: 5px 0px;
+}
+.pulb-listed-span {
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	color: #f0f0f0;
+	font-size: 10pt;
+}
+.pulb-topic {
+	position: relative;
+	border-bottom: 1px dashed silver;
+	padding-right: 100px;
+}
+.pulb-topic:last-child {
+	border-bottom: 0px;
+}
+.pulb-topic-title {
+	color: #333;
+}
+.pulb-topic-title span {
+	font-weight: bold;
+	font-size: 15px;
+}
+.pulb-topic-answer {
+	padding: 2px 0px;
+	min-height: 50px;
+}
+.pulb-topic-answer p {
+	margin: 3px 0px;
+	text-indent: 2em;
+	font-size: 13px;
+	color: gray;
+	line-height: 23px;
+}
+.pulb-topic-links {
+	max-height: 31px;
+	overflow: hidden;
+}
+.pulb-light-link {
+	text-decoration: none;
+	color: #2890D0;
+	display: inline-block;
+	margin-right: 8px;
+	font-size: 13px;
+}
+.pulb-light-link:first-child {
+	display: inline;
+	color: silver;
+	margin-left: 0px;
+	margin-right: 15px;
+}
+.pulb-light-link:last-child {
+	display: inline;
+	float: right;
+	color: silver;
+	margin-left: 0px;
+	margin-right: 15px;
+}
+.pulb-light-link:hover {
+	color: silver;
+}
+.pulb-user-name {
+	color: #2890D0;
+}
+.pulb-topic-status {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 90px;
+	height: 90px;
+	max-width: 90px;
+	max-height: 90px;
+	overflow: hidden;
+	background-color: #2890D0;
+}
+.pulb-topic-status .pulb-listed-span {
+	text-align: center;
+}
+.pulb-topic-status .pulb-listed-span:first-child {
+	font-size: 30px;
+	height: 50px;
+	line-height: 50px;
+	margin: 5px;
+	margin-bottom: 0px;
+}
+.pulb-topic-status .pulb-listed-span:last-child {
+	border-top: 1px dashed white;
+	font-size: 18px;
+	height: 40px;
+	line-height: 30px;
+	position: relative;
+	top: 0px;
+	margin: 5px;
+	margin-top: 0px;
+}

@@ -1,0 +1,95 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>JLE系列组件</title>
+	<link rel="stylesheet" type="text/css" href="css/basic-ui.css" />
+	<link rel="stylesheet" type="text/css" href="css/tooltip.css" />
+	<script type="text/javascript" src="../lib/web/public/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="js/tooltip.js"></script>
+</head>
+<body>
+	<div class="jle-div-1">基本</div>
+	<label class="jle-label">文本：</label><input type="text" class="jle-input" placeHolder="jle-input" /><div class="jle-br" />
+	<label class="jle-label">Span：</label><span class="jle-span">jle-span</span><div class="jle-br" />
+	<label class="jle-label">链接：</label><a href="http://www.baidu.com" target="_blank" class="jle-a">jle-a</a><div class="jle-br" />
+	<label class="jle-label">按钮：</label><button class="jle-button">jle-button</button><div class="jle-br" />
+	<label class="jle-label">图片：</label><div class="jle-br" /><img class="jle-img" src="img/sky.jpg" style="max-width:200px;max-height:200px;">
+
+	<div class="jle-div-1">段落</div>
+	<p class="jle-p">鹅，鹅，鹅，</p>
+	<p class="jle-p">曲项向天歌。</p>
+	<p class="jle-p">白毛浮绿水，</p>
+	<p class="jle-p">红掌拨清波。</p>
+	
+
+	<div class="jle-div-1">列表</div>
+	<ul class="jle-ul">
+		<li class="jle-li">jle-li 1</li>
+		<li class="jle-li">jle-li 2</li>
+		<li class="jle-li">jle-li 3</li>
+	</ul>
+
+	<div class="jle-div-1">表格</div>
+	<table class="jle-table" cellpadding="0" cellspacing="0">
+		<tr class="jle-tr">
+			<th class="jle-th">jle-th</th><th class="jle-th">jle-th</th><th class="jle-th">jle-th</th>
+		</tr>
+		<tr class="jle-tr">
+			<td class="jle-td">jle-td</td><td class="jle-td">jle-td</td><td class="jle-td">jle-td</td>
+		</tr>
+		<tr class="jle-tr">
+			<td class="jle-td">jle-td</td><td class="jle-td">jle-td</td><td class="jle-td">jle-td</td>
+		</tr>
+	</table>
+	
+	<div class="jle-div-1">弹出提示</div>
+	<button class="jle-button" id="tooltipTest1">浮动弹出</button>
+	<button class="jle-button" id="tooltipTest2">箭头弹出</button>
+	<button class="jle-button" id="tooltipTest3">关闭弹出</button>
+	<button class="jle-button" id="tooltipTest4">点击弹出</button>
+	<script type="text/javascript">
+		$(function(){
+			$("#tooltipTest1").tooltip({
+				content: "<span class='jle-span'>这是一个弹出层。</span><br>"
+					+ "<a href='http://www.baidu.com' target='_blank' class='jle-a'>http://www.baidu.com</a><br>"
+					+ "<img src='img/sky.jpg' class='jle-img'>",
+				padding : 10,
+				showArrow : false,
+				closable : false,
+				clickOnly : false,
+				maxSize : 220
+			});
+			$("#tooltipTest2").tooltip({
+				content: "<span class='jle-span'>这是一个弹出层。</span><br>"
+					+ "<a href='http://www.baidu.com' target='_blank' class='jle-a'>http://www.baidu.com</a><br>"
+					+ "<img src='img/sky.jpg' class='jle-img'>",
+				padding : 10,
+				showArrow : true,
+				closable : false,
+				clickOnly : false,
+				maxSize : 220
+			});
+			$("#tooltipTest3").tooltip({
+				content: "<span class='jle-span'>这是一个弹出层。</span><br>"
+					+ "<a href='http://www.baidu.com' target='_blank' class='jle-a'>http://www.baidu.com</a><br>"
+					+ "<img src='img/sky.jpg' class='jle-img'>",
+				padding : 10,
+				showArrow : true,
+				closable : true,
+				clickOnly : false,
+				maxSize : 220
+			});
+			$("#tooltipTest4").tooltip({
+				content: "<span class='jle-span'>这是一个弹出层。</span><br>"
+					+ "<a href='http://www.baidu.com' target='_blank' class='jle-a'>http://www.baidu.com</a><br>"
+					+ "<img src='img/sky.jpg' class='jle-img'>",
+				padding : 10,
+				showArrow : true,
+				closable : true,
+				clickOnly : true,
+				maxSize : 220
+			});
+		})
+	</script>
+</body>
+</html>

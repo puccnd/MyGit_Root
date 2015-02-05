@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>JLE系列组件</title>
+	<link rel="stylesheet" type="text/css" href="css/validate.css" />
+</head>
+<body>
+	<div class="jle-panel">
+		<ul class="jle-ul" id="toValidate">	
+			<li class="jle-li jle-title"><b>等待输入</b></li>
+			<li class="jle-li"><input class="jle-input jle-validate" type="text" placeHolder="请输入** [, 格式：***]" value=""></li>
+		</ul>
+	</div>
+	<div class="jle-panel">
+		<ul class="jle-ul" id="toValidate">	
+			<li class="jle-li jle-title"><b>提交验空</b></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" data="name" type="text" value=""><span class="jle-error">×</span><span class="jle-error-desc">必输项不能为空！</span></li>
+		</ul>
+	</div>
+	<div class="jle-panel">
+		<ul class="jle-ul" id="toValidate">
+			<li class="jle-li jle-title"><b>帐号校验</b></li>
+			<li class="jle-li"><input class="jle-input jle-validate" type="text" value="pink_ear"><span class="jle-ok">√</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" data="name" type="text" value="cd"><span class="jle-error">×</span><span class="jle-error-desc">内容长度太短，应在6到50之间！</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" data="name" type="text" value="admin"><span class="jle-error">×</span><span class="jle-error-desc">不得使用系统关键字！</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" data="name" type="text" value="*(^*&"><span class="jle-error">×</span><span class="jle-error-desc">内容非法！正确格式：字母开头，由字母、数字、减号、下划线组成。</span></li>
+		</ul>
+	</div>
+	<div class="jle-panel">
+		<ul class="jle-ul" id="toValidate">
+			<li class="jle-li jle-title"><b>密码校验</b></li>
+			<li class="jle-li"><input class="jle-input jle-validate" type="password" value="111111111"><span class="jle-ok">√</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="password" value="111111"><span class="jle-error">×</span><span class="jle-error-desc">两次输入的密码不一致！</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="password" value="ab"><span class="jle-error">×</span><span class="jle-error-desc">内容长度太短，应在6到20之间！</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="password" value="111111"><span class="jle-error">×</span><span class="jle-error-desc">密码强度太弱！可通过字母、数字、特殊符号的组合，来增加密码复杂度。</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate" type="password" value="11111111"><span class="jle-warn">!</span><span class="jle-warn-desc">密码强度一般！可尝试使用特殊字符来增加密码复杂度。</span></li>
+		</ul>
+	</div>
+	<div class="jle-panel">
+		<ul class="jle-ul" id="toValidate">
+			<li class="jle-li jle-title"><b>邮箱</b></li>
+			<li class="jle-li"><input class="jle-input jle-validate" type="text" value="admin_007@julong.com.cn"><span class="jle-ok">√</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="text" value="12345@"><span class="jle-error">×</span><span class="jle-error-desc">请使用正确的邮箱格式！</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="text" value="10000@qq.com"><span class="jle-error">×</span><span class="jle-error-desc">请使用您自己的邮箱！</span></li>
+		</ul>
+	</div>
+	<div class="jle-panel">
+		<ul class="jle-ul" id="toValidate">
+			<li class="jle-li jle-title"><b>数字</b></li>
+			<li class="jle-li"><input class="jle-input jle-validate" type="text" value="10.01"><span class="jle-ok">√</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="text" value="0.3"><span class="jle-error">×</span><span class="jle-error-desc">请输入正确的整数。</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="text" value="#a30"><span class="jle-error">×</span><span class="jle-error-desc">请输入正确的浮点数。</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="text" value="101"><span class="jle-error">×</span><span class="jle-error-desc">请输入100以内的正整数。</span></li>
+		</ul>
+	</div>
+	<div class="jle-panel">
+		<ul class="jle-ul" id="toValidate">
+			<li class="jle-li jle-title"><b>日期</b></li>
+			<li class="jle-li"><input class="jle-input jle-validate" type="text" value="2010-01-03 01:54:18"><span class="jle-ok">√</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="text" value="2010-01-03"><span class="jle-error">×</span><span class="jle-error-desc">日期位数不对，请检查是否包含：年、月、日、时、分、秒。</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="text" value="2010/01/03"><span class="jle-error">×</span><span class="jle-error-desc">日期格式不对，正确的格式是YYYY-MM-DD。</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="text" value="2010-01-02"><span class="jle-error">×</span><span class="jle-error-desc">结束日期不能小于开始日期。</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="text" value="2099-01-02"><span class="jle-error">×</span><span class="jle-error-desc">请选择今年以内的日期。</span></li>
+			<li class="jle-li"><input class="jle-input jle-validate jle-validate-error" type="text" value="2000-01-02"><span class="jle-error">×</span><span class="jle-error-desc">您的生日与身份证日期不相符。</span></li>
+		</ul>
+	</div>
+</body>
+</html>

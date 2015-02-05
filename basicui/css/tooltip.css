@@ -1,0 +1,43 @@
+.jle-panel {
+min-width: 30px;
+min-height: 30px;
+border: 1px solid #d3d3d3;
+box-shadow: 1px 0px 1px silver,0px 1px 1px silver,-1px 0px 1px silver,0px -1px 1px silver;
+overflow: visible;
+}
+
+.jle-tooltip {
+position: absolute;
+background-color: #f9f9c3;
+z-index:200;
+}
+
+.jle-arrow {
+position: absolute;
+border: 0px;
+margin: 0px;
+padding: 0px;
+}
+
+.jle-btn-close {
+position: absolute;
+color: white;
+background-color: #d3d3d3;
+border: 1px solid gray;
+border-radius: 10px;
+margin: 0px;
+padding: 0px;
+right: 5px;
+top: 5px;
+text-align: center;
+width: 20px;
+height: 20px;
+line-height: 20px;
+font-size: 18px;
+cursor:pointer;
+}
+
+.jle-btn-close:hover {
+	color: red;
+	background-color: white;
+}

@@ -1,0 +1,117 @@
+body {
+	margin: 0px;
+	overflow: hidden;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+	-webkit-padding-after: 0px;
+	-webkit-padding-before: 0px;
+	-webkit-margin-start: 0px;
+}
+li {
+	margin: 0px;
+	padding: 0px;
+}
+div,
+span {
+	font-size: 10pt;
+	font-family: "微软雅黑", "comic sans ms";
+}
+.my-container,
+.my-repeat {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.my-vtabs {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 30px;
+	max-width: 30px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+	background-color: rgba(199, 199, 199, 0.3);
+}
+.my-vtabs-mode2 {
+	width: 50px;
+	max-width: 50px;
+}
+.my-vlabel {
+	display: block;
+	width: 20px;
+	text-align: center;
+	padding: 5px 5px;
+	border-bottom: 1px dotted white;
+	background-color: silver;
+	color: white;
+}
+.my-vtabs-mode2 .my-vlabel {
+	width: 30px;
+	padding: 30px 10px 10px 10px;
+	background-image: url(../img/smile.png);
+	background-repeat: no-repeat;
+	background-position: center 5px;
+	background-size: auto 20px;
+}
+.my-vlabel:hover {
+	background-color: gray;
+}
+.my-vfms {
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 0px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+.my-page-up,
+.my-page-dn {
+	position: relative;
+	width: 20px;
+	text-align: center;
+	padding: 5px 5px;
+	height: 40px;
+	cursor: pointer;
+}
+.my-vtabs-mode2 .my-page-up,
+.my-vtabs-mode2 .my-page-dn {
+	width: 30px;
+	padding: 5px 10px;
+}
+.my-page-up:hover,
+.my-page-dn:hover {
+	background-color: gray;
+}
+.my-page-up {
+	border-bottom: 1px dotted white;
+	background: url(../img/up.png) no-repeat;
+	background-size: 15px auto;
+	background-position: center;
+	background-color: silver;
+}
+.my-page-dn {
+	border-top: 1px dotted white;
+	background: url(../img/dn.png) no-repeat;
+	background-size: 15px auto;
+	background-position: center;
+	background-color: silver;
+}
+.my-page-option {
+	cursor: pointer;
+}
+.my-selected {
+	background-color: gray;
+	color: white;
+}
+.my-fm-view {
+	background-color: #f2f2f2;
+}
